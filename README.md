@@ -1,6 +1,10 @@
-# FastScrapy
+# ⚡ FastScrapy
 
 Lightweight async web scraper framework for concurrent scraping.
+
+```sh
+pip install fastscrapy
+```
 
 ## Why fastscrapy?
 
