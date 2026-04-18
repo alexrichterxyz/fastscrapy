@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Extensible async scraper library for concurrent web scraping with worker pattern"
 requires-python = ">=3.9"
 readme = "README.md"
-license = {text = "GPL-3.0"}
+license = {text = "MIT"}
 authors = [{name = "Alexander Richter", email = "hi@alexrichter.xyz"}]
 keywords = ["scraping", "async", "asyncio", "aiohttp", "concurrency", "web"]
 dependencies = ["aiohttp>=3.0"]
