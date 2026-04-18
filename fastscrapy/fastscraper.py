@@ -18,7 +18,7 @@ class FastScraper(ABC):
 		"""Override to define worker logic."""
 		pass
 
-	async def _scrape_async(self, num_workers: int):
+	async def _run_async(self, num_workers: int):
 		"""Run workers concurrently."""
 		async with aiohttp.ClientSession(timeout=self.client_timeout) as session:
 			self.session = session
@@ -28,4 +28,4 @@ class FastScraper(ABC):
 
 	def run(self, num_workers: int):
 		"""Run workers concurrently. Sync entry point."""
-		asyncio.run(self._scrape_async(num_workers))
+		asyncio.run(self._run_async(num_workers))
